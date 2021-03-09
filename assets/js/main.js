@@ -285,7 +285,7 @@ if(scrollTop >=  half) {
 
 $('.onepage-nav').dropdownMenu({
     menuClass: 'onepage-menu',
-    breakpoint: 1200,
+    breakpoint: 9999,
     toggleClass: 'active',
     classButtonToggle: 'navbar-toggle',
     subMenu: {

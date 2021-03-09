@@ -208,6 +208,22 @@ img {
         top: -9999px;
         left: -9999px;
     }
+    #back-to-top {
+        position: fixed;
+        z-index: 99999;
+        bottom: 40px !important;
+        right: 25px !important;
+        width: 40px ;
+        height: 40px;
+        line-height: 48px;
+        color: #333;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        cursor: pointer;
+        font-size: 36px;
+        text-align: center;
+    }
+    
 
     .table-responsive-02 tr {
         padding: 15px 0;
@@ -1716,7 +1732,7 @@ ul {
     position: absolute;
     top: 45%;
     right: 0;
-    z-index: 99;
+    z-index: 9;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
     -webkit-transform: translateY(-45%);
@@ -1822,9 +1838,9 @@ ul {
     padding: 40px 0;
 }
 
-.footer #back-to-top {
+#back-to-top {
     position: fixed;
-    z-index: 999l;
+    z-index: 99999;
     bottom: 50px;
     right: 50px;
     width: 40px;
