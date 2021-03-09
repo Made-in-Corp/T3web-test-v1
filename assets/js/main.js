@@ -206,7 +206,8 @@ $('.swiper__module').each(function() {
 			pagination: self.find('.swiper-pagination-custom'),
 			nextButton: self.find('.swiper-button-next-custom'),
 			prevButton: self.find('.swiper-button-prev-custom'),
-			spaceBetween: 30
+			spaceBetween: 30,
+			speed:150,
 		},
 		options = $.extend(optDefault, optData);
 	wrapper.children().wrap('<div class="swiper-slide"></div>');
@@ -222,6 +223,7 @@ if (selector.length > 0) {
 					centeredSlides: true,
 					slidesPerView: 3,
 					touchRatio: 0.3,
+					speed: 10,
 					slideToClickedSlide: true,
 					pagination: selector.find('.swiper-pagination-custom'),
 					nextButton: selector.find('.swiper-button-next-custom'),
@@ -247,7 +249,7 @@ $('.typing__module').each(function(index) {
 		optData = eval('(' + self.attr('data-options') + ')'),
 		optDefault = {
 			stringsElement: self.find('.typed-strings')[0],
-			typeSpeed: 80,
+			typeSpeed: 90,
 			loop: true
 		},
 		options = $.extend(optDefault, optData);
@@ -285,7 +287,7 @@ if(scrollTop >=  half) {
 
 $('.onepage-nav').dropdownMenu({
     menuClass: 'onepage-menu',
-    breakpoint: 9999,
+    breakpoint: 999,
     toggleClass: 'active',
     classButtonToggle: 'navbar-toggle',
     subMenu: {
