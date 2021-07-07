@@ -190,6 +190,17 @@ img {
 .table-responsive-01 table > tfoot > tr > td {
     white-space: nowrap;
 }
+#msgicon {
+    width: 4.5rem;
+    z-index: 0;
+    position:fixed; 
+    bottom:120px; 
+    right:48px;
+    z-index: 999999;
+    display:scroll;  
+    color:  #F7E600; 
+    z-index: 999999;
+}
 
 @media (max-width: 991px) {
     .table-responsive-02 table, .table-responsive-02 thead,
@@ -252,6 +263,17 @@ img {
         justify-content: center;
         width: 95%;
         margin: 0 auto !important;
+    }
+    #msgicon {
+        width: 4.5rem;
+        z-index: 0;
+        position:fixed; 
+        bottom:100px; 
+        right:22px;
+        z-index: 999999;
+        display:scroll;  
+        color:  #F7E600; 
+        z-index: 999999;
     }
 }
 a {
