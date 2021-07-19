@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="contact form example">
     <title>Contact Form Example</title>
-
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+    <style>
+        body {
+            margin-top: 5rem;
+            margin-left: 5rem;
+        }
+    </style>
 </head>
 <body>
 
@@ -29,7 +35,6 @@
     <input id="email" name="email" type="email" value="" required placeholder="이메일 양식에 맞게 작성해 주세요."/>
     <span id="email-invalid" style="display:none"></span>
     </fieldset>
-    </br></br>
     
     <input type="radio" name="radio" id="r1" value="1" checked>기존 전환 문의
     &nbsp;&nbsp;&nbsp;&nbsp;
@@ -43,14 +48,17 @@
     </div>
     </fieldset>
     
-    <!-- Customise the Thankyou Message People See when they submit the form: -->
-    <div style="display:none;" class="thankyou_message">
-    <h2> 확인 후 바로 연락 드리겠습니다. 감사합니다^^</h2>
-    </div>
     
     <button class="button-success pure-button button-xlarge">
-    <i class="fa fa-paper-plane"></i>&nbsp;전송</button>
-    </br></br>
+        <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+    </div>
+
+
+    <div class="thankyou_message" style="display:none;">
+        <h2><em>Thanks</em> for contacting us!
+          We will get back to you soon!</h2>
+      </div>
+  
     </form>
     
     <!-- END -->
@@ -58,6 +66,9 @@
     <!-- Submit the Form to Google Using "AJAX" -->
     <script data-cfasync="false" type="text/javascript"
     src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+    <script data-cfasync="false" type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js">
+</script>
     </body>
     </html>
 
