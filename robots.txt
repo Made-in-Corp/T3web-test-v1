@@ -1,0 +1,13 @@
+User-agent : *
+Disallow : /
+
+User-agent : Googlebot
+User-agent: Yeti
+User-agent : Daumoa
+User-agent: NaverBot
+Allow: /
+
+
+
+
+Sitemap: https://th3.co.kr
